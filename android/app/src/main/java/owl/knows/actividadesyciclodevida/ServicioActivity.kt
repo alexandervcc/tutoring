@@ -20,7 +20,7 @@ class ServicioActivity : AppCompatActivity() {
 
         this.binding.btnDetener.setOnClickListener {
             val intent = Intent(this,MusicService::class.java)
-            stopSelf(intent)
+            this.stopService(intent)
         }
 
     }
