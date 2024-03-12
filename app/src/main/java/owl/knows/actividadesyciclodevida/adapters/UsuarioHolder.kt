@@ -10,7 +10,9 @@ import androidx.recyclerview.widget.RecyclerView
 import owl.knows.actividadesyciclodevida.R
 import owl.knows.actividadesyciclodevida.models.Usuario
 
-class UsuarioHolder(view: View, private val context: Context):RecyclerView.ViewHolder(view) {
+class UsuarioHolder(private val view: View,
+                    private val context: Context
+):RecyclerView.ViewHolder(view) {
     private val image = view.findViewById<ImageView>(R.id.ivRVFoto)
     private val nombre = view.findViewById<TextView>(R.id.tvRVNombre)
     private val boton = view.findViewById<Button>(R.id.btnRVAccion)

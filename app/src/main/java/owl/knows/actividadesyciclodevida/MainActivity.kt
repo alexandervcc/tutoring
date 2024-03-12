@@ -53,7 +53,12 @@ class MainActivity : AppCompatActivity() {
         }
 
         this.binding.btnRecycleView.setOnClickListener {
-            val intent = Intent(this,RecycleViewActivity::class.java)
+            val intent = Intent(this, RecycleViewActivity::class.java)
+            startActivity(intent)
+        }
+
+        this.binding.btnServicio.setOnClickListener {
+            val intent = Intent(this,ServicioActivity::class.java)
             startActivity(intent)
         }
 
