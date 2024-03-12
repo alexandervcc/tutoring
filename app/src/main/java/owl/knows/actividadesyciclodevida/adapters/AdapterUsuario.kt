@@ -1,16 +1,17 @@
 package owl.knows.actividadesyciclodevida.adapters
 
+import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import owl.knows.actividadesyciclodevida.R
 import owl.knows.actividadesyciclodevida.models.Usuario
 
-class AdapterUsuario(private val lista:List<Usuario>):RecyclerView.Adapter<UsuarioHolder>() {
+class AdapterUsuario(private val lista:List<Usuario>,private val context:Context):RecyclerView.Adapter<UsuarioHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): UsuarioHolder {
         val vista = LayoutInflater.from(parent.context)
             .inflate(R.layout.item_rv,parent,false)
-        return UsuarioHolder(vista)
+        return UsuarioHolder(vista, context)
     }
 
     override fun getItemCount(): Int {

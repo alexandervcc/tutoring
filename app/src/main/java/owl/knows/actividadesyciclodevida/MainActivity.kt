@@ -52,6 +52,11 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        this.binding.btnRecycleView.setOnClickListener {
+            val intent = Intent(this,RecycleViewActivity::class.java)
+            startActivity(intent)
+        }
+
         this.binding.btnEnviarEmail.setOnClickListener {
             val intentEmail = Intent(Intent.ACTION_SEND)
             intentEmail.type = "message/rfc822"

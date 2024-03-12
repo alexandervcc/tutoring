@@ -107,56 +107,45 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etPassword" />
 
-    <Button
-        android:id="@+id/btnRegistrar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="149dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="156dp"
-        android:text="Registrar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/swGenero" />
 
-    <Button
-        android:id="@+id/btnWebSearch"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="149dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="156dp"
-        android:text="Busqueda Web"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.421"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnRegistrar" />
-
-    <Button
-        android:id="@+id/btnEnviarEmail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="149dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="156dp"
-        android:text="Enviar Email"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.35"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnWebSearch" />
-
-    <Button
-        android:id="@+id/btnListaSimple"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Lista simple"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.922" />
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/btnRegistrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registrar" />
+
+        <Button
+            android:id="@+id/btnWebSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Busqueda Web" />
+
+        <Button
+            android:id="@+id/btnEnviarEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enviar Email"/>
+
+        <Button
+            android:id="@+id/btnListaSimple"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lista simple" />
+        <Button
+            android:id="@+id/btnRecycleView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recycle View" />
+
+    </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
