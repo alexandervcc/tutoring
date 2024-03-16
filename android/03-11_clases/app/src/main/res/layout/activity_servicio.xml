@@ -8,6 +8,12 @@
     android:padding="15dp"
     tools:context=".ServicioActivity">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Servicio Foreground"
+        android:textSize="25dp"
+        />
     <Button
         android:id="@+id/btnReproducir"
         android:layout_width="match_parent"
@@ -15,6 +21,40 @@
         android:text="Reproducir" />
     <Button
         android:id="@+id/btnDetener"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Detener" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Servicio Background"
+        android:textSize="25dp"
+        />
+    <Button
+        android:id="@+id/btnBackStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Comenzar" />
+    <Button
+        android:id="@+id/btnBackStop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Detener" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Servicio Bound"
+        android:textSize="25dp"
+        />
+    <Button
+        android:id="@+id/btnBoundStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Comenzar" />
+    <Button
+        android:id="@+id/btnBoundStop"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Detener" />

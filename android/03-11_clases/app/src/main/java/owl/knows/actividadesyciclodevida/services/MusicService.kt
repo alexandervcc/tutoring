@@ -15,7 +15,7 @@ import android.util.Log
 // Ciclo de vida: metodos sobrecargables
 // invoca el servicio
 class MusicService : Service() {
-    private lateinit var reproductor:MediaPlayer
+    private var reproductor :MediaPlayer? = null
 
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
         super.onStartCommand(intent, flags, startId)
@@ -23,9 +23,9 @@ class MusicService : Service() {
 
         this.reproductor = MediaPlayer.create(this, Settings.System.DEFAULT_RINGTONE_URI)
 
-        this.reproductor.setLooping(true)
+        this.reproductor?.setLooping(true)
 
-        this.reproductor.start()
+        this.reproductor?.start()
 
         return START_STICKY
 
@@ -57,6 +57,8 @@ class MusicService : Service() {
     // el servicio ya no es necesario y sera destruido. Limpieza de recursos
     override fun onDestroy() {
         super.onDestroy()
+        this.reproductor?.stop()
+        this.reproductor = null
         Log.d("SERVICE","MusicService Destruido")
     }
 }
