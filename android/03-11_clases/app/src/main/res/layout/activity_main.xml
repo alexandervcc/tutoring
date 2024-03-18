@@ -64,7 +64,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Servicio" />
-
+        <Button
+            android:id="@+id/btnFragmentos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fragmentos" />
 
     </LinearLayout>
 

@@ -73,6 +73,11 @@ class MainActivity : AppCompatActivity() {
             startActivity(intentEmail)
 
         }
+
+        this.binding.btnFragmentos.setOnClickListener {
+            val intent = Intent(this,FragmentsActivity::class.java)
+            startActivity(intent)
+        }
     }
 
 
