@@ -21,11 +21,19 @@ public class NumerosControlador {
 	
 	@GetMapping(path = "/")
 	public int devolverNumeroRecibido(
-		@RequestParam(name = "search_query", required = false) Integer numero
+		// Ejemplo de QueryParams
+		@RequestParam(name = "num1", required = false) Integer n1,
+		@RequestParam(name = "num2", required = false) Integer n2,
+		@RequestParam(name = "text", required = false) String texto		
 	) {
-		System.out.print("\n\n\n\n\n\nNUMERO: "+numero+"\n\n\n\n\n");
-		return numero;
+		System.out.print("\n\n\n\n\n\nNUMERO 1: "+n1);
+		System.out.print("\nNUMERO 2: "+n2);
+		System.out.print("\nTEXTO: "+texto);
+		
+
+		return -1;
 	}
+	
 	
 	@GetMapping(path = "/potencia_cuadrada")
 	public int calcularPotenciaCuadrada(
