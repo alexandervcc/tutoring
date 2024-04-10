@@ -1,4 +1,4 @@
-package dto;
+package com.example.demo.dto;
 
 // data transfer object
 public class LibroDto {
