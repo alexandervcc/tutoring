@@ -25,21 +25,22 @@ public class LibrosController {
 		return nuevoLibro;
 	}
 
-	// path param
-	/*
-	 * Ejemplo de solo recibir el valor y devolverlo
+	// path param	
+	// Ejemplo de solo recibir el valor y devolverlo
+	// 1. al path param (nombre) ponerlo entre llaves
 	@GetMapping(value = "/{idLibro}")
+	// en el metodo, utilizar la anotacion @PathVariable, con el nombre del paso 1 
 	public String buscarLibro(@PathVariable("idLibro") String idLibro) {
 		return idLibro + "-" + idLibro;
 	}
-	*/
+	
 	
 	/**
 	 * Obtiene el id del libro del path param, y procede a buscar en la lista de libros del controlador
 	 * @param idLibro
 	 * @return
 	 */
-	@GetMapping(value = "/{idLibro}")
+	@GetMapping(value = "buscar/{idLibro}")
 	public LibroDto buscarLibro(@PathVariable("idLibro") Integer idLibro) {
 		LibroDto libroBuscado = null;
 		for(LibroDto l:this.listaLibros) {
