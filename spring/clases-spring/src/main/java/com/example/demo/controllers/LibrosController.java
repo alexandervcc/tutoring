@@ -29,7 +29,7 @@ public class LibrosController {
 	// Ejemplo de solo recibir el valor y devolverlo
 	// 1. al path param (nombre) ponerlo entre llaves
 	@GetMapping(value = "/{idLibro}")
-	// en el metodo, utilizar la anotacion @PathVariable, con el nombre del paso 1 
+	// 2. en el metodo, utilizar la anotacion @PathVariable, con el nombre del paso 1 
 	public String buscarLibro(@PathVariable("idLibro") String idLibro) {
 		return idLibro + "-" + idLibro;
 	}
