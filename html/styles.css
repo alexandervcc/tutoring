@@ -1,0 +1,51 @@
+/* clases */
+.caja_div {
+  border: 5px solid rgb(255, 204, 0);
+  padding: 20px;
+  margin: 20px;
+}
+
+.caja_texto_p1 {
+  border: 1px solid red;
+  padding: 10px;
+  margin: 25px;
+  background: rgb(171, 171, 208);
+}
+
+.esp {
+  background: rgb(225, 221, 173);
+  /* width: 50%; */
+  width: 700px;
+}
+.esp_1 {
+  border: 1px solid red;
+  width: 50%;
+}
+.esp_2 {
+  border: 1px solid blue;
+  width: 800px;
+  height: 100px;
+}
+
+.lin {
+  border: 1px solid black;
+  margin-top: 25px;
+  margin: 25px;
+  padding: 25px;
+}
+
+.lin_1 {
+  border: 2px solid rgb(213, 138, 63);
+  width: 320px;
+  height: 480px;
+  display: inline-block;
+}
+
+.lin_2 {
+  border: 2px solid rgb(126, 187, 35);
+  margin-left: 50px;
+  width:  400px;
+  height: 480px;
+  background: rebeccapurple;
+  display: inline-block;
+}
