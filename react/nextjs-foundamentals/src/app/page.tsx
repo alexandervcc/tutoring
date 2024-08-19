@@ -1,20 +1,20 @@
-// Es un componente de React
-// - es una funcion
-// - Siempre tiene la primera letra en mayuscula
-// - Siempre devuelve JSX (tipo especial HTML)
+import ListaProductos from "./ListaProductos";
+import Secciones from "./Secciones";
+
 const Home = () => {
   return (
     <div>
       <h1>Compustore</h1>
       <h6>Tu tienda amiga de componentes de PC</h6>
+      <Secciones />
 
-      <ul>
-        <li>Tarjetas madre</li>
-        <li>Memorias RAM</li>
-        <li>Procesadores</li>
-      </ul>
-
-      <img src="https://m.media-amazon.com/images/I/71LMiD9i+ML._AC_SL1500_.jpg" width={200} />
+      <img
+        src="https://m.media-amazon.com/images/I/71LMiD9i+ML._AC_SL1500_.jpg"
+        width={200}
+      />
+      <br />
+      <br />
+      <ListaProductos />
     </div>
   );
 };
