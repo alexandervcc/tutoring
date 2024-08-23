@@ -13,11 +13,28 @@
 type TarjetaProductoProps = {
   nombre: string;
   precio: number;
+  descripcion?: string;
 };
 
 const TarjetaProducto = (props: TarjetaProductoProps) => {
   // Destructurar valores dentro de los props (extraer de un objeto)
-  const { nombre, precio } = props;
+  const { nombre, precio, descripcion = "Descripcion pendiente." } = props;
+
+  let descuento = null;
+  if (precio % 2 === 0) {
+    descuento = (
+      <p>
+        <b>Descuento: </b> 10 %
+      </p>
+    );
+  }
+
+  const impuestos = (
+    <p>
+      <b> -- Impuestos: </b>
+      {precio % 2 === 0 ? <p>10%</p> : <p>5%</p>}
+    </p>
+  );
 
   return (
     <div>
@@ -26,7 +43,9 @@ const TarjetaProducto = (props: TarjetaProductoProps) => {
       <p>
         <b>Precio:</b> {precio}
       </p>
-      <p>Computador gamer de ultima generacion</p>
+      {descuento}
+      {impuestos}
+      <p>{descripcion}</p>
       <hr />
     </div>
   );
