@@ -1,3 +1,4 @@
+import Contador from "./Contador";
 import ListaProductos from "./ListaProductos";
 import Secciones from "./Secciones";
 
@@ -7,7 +8,7 @@ const Home = () => {
       <h1>Compustore</h1>
       <h6>Tu tienda amiga de componentes de PC</h6>
       <Secciones />
-
+      <Contador />
       <img
         src="https://m.media-amazon.com/images/I/71LMiD9i+ML._AC_SL1500_.jpg"
         width={200}
