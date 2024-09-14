@@ -1,4 +1,5 @@
 import Contador from "./Contador";
+import Estados from "./Estados";
 import ListaProductos from "./ListaProductos";
 import Secciones from "./Secciones";
 
@@ -7,6 +8,7 @@ const Home = () => {
     <div>
       <h1>Compustore</h1>
       <h6>Tu tienda amiga de componentes de PC</h6>
+      <Estados />
       <Secciones />
       <Contador />
       <img
