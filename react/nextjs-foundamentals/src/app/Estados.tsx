@@ -10,6 +10,11 @@ const Estados = () => {
 
   cantidadRenderizaciones += 1;
 
+  const imprimirEnConsola = () => {
+    console.log("imprimiendo");
+  };
+  const estado = true;
+
   return (
     <div style={{ border: "3px solid green" }}>
       Estados
@@ -17,6 +22,10 @@ const Estados = () => {
         <b>Numero solo en variable: </b>
         {numero2}
       </p>
+      <button onClick={imprimirEnConsola}>Boton Activo</button>
+      <button onClick={imprimirEnConsola} disabled={estado}>
+        Boton Inactivo
+      </button>
       <p>
         <b>Numero en estado: </b>
         {numero}
