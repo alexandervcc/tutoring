@@ -1,6 +1,7 @@
 import Contador from "./Contador";
 import Estados from "./Estados";
 import ListaProductos from "./ListaProductos";
+import Perro from "./Perro";
 import Secciones from "./Secciones";
 
 const Home = () => {
@@ -8,6 +9,7 @@ const Home = () => {
     <div>
       <h1>Compustore</h1>
       <h6>Tu tienda amiga de componentes de PC</h6>
+      <Perro />
       <Estados />
       <Secciones />
       <Contador />
