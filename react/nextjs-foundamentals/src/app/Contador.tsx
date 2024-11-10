@@ -1,10 +1,12 @@
 "use client";
 
+import { definicionDePalabraPerro } from "@/http/palabras";
 import React, { useState } from "react";
 
 let ejecuciones: number = 0;
 
 const Contador = () => {
+  definicionDePalabraPerro();
   const [contadorVerdadero, setContadorVerdadero] = useState<number>(0);
 
   ejecuciones += 1;
@@ -17,7 +19,7 @@ const Contador = () => {
     <div style={{ border: "2px solid red", margin: 8, padding: 8 }}>
       <input type="number" />
       <input type="number" />
-      <button>sumar</button>      <button>restar</button>
+      <button>sumar</button> <button>restar</button>
       <p>Resultado: -41</p>
       <h4>Contador: </h4>
       <button
@@ -28,7 +30,7 @@ const Contador = () => {
 
           // estador contadorVerdadero
           const nuevoValorContadorVerdadero = contadorVerdadero + 1;
-          setContadorVerdadero(nuevoValorContadorVerdadero)
+          setContadorVerdadero(nuevoValorContadorVerdadero);
         }}
       >
         +
@@ -39,12 +41,11 @@ const Contador = () => {
           console.log("decrementar: ", contador);
 
           const nuevoValorContadorVerdadero = contadorVerdadero - 1;
-          setContadorVerdadero(nuevoValorContadorVerdadero)
+          setContadorVerdadero(nuevoValorContadorVerdadero);
         }}
       >
         -
       </button>
-
       <p>Valor contador: {contador}</p>
       <p>Valor contadorVerdadero: {contadorVerdadero}</p>
     </div>
