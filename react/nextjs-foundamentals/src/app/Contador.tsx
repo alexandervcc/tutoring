@@ -1,12 +1,10 @@
 "use client";
 
-import { definicionDePalabraPerro } from "@/http/palabras";
 import React, { useState } from "react";
 
 let ejecuciones: number = 0;
 
 const Contador = () => {
-  definicionDePalabraPerro();
   const [contadorVerdadero, setContadorVerdadero] = useState<number>(0);
 
   ejecuciones += 1;
