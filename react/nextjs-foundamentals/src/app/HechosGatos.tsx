@@ -1,6 +1,6 @@
 "use client";
 
-import { HechoGato, hechosDeLosGatos } from "@/http/palabras";
+import { HechoGato, hechosDeLosGatos } from "@/http/hechos-gatos";
 import React, { useState } from "react";
 
 const HechosGatos = () => {
