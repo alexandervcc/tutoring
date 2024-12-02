@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Contador from "./Contador";
 import Efectos from "./Efectos";
 import Estados from "./Estados";
@@ -10,6 +11,20 @@ const Home = () => {
     <div>
       <h1>Compustore</h1>
       <h6>Tu tienda amiga de componentes de PC</h6>
+      <div style={{ border: "5px solid violet", padding: "25px" }}>
+        <h3>Links</h3>
+        <Link href={"/perros"}>Perros</Link>
+        <br />
+        <Link href={"/perros"}>
+          <button>Perros</button>
+        </Link>
+        <ul>
+          <li>
+            <Link href={"/perros"}>Perros</Link>
+          </li>
+        </ul>
+      </div>
+
       <Efectos />
       <HechosGatos />
       <Perro />
