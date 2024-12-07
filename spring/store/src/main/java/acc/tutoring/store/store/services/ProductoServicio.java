@@ -21,12 +21,7 @@ public class ProductoServicio {
   }
 
   public Producto creaProducto(ProductoReqDto producto) {
-    Producto p = Producto.builder()
-        .cantidad(producto.cantidad)
-        .descripcion(producto.descripcion)
-        .nombre(producto.nombre)
-        .precio(producto.precio)
-        .build();
+    Producto p = new Producto(producto.nombre, producto.descripcion, producto.precio, producto.cantidad);
     return this.productoRepository.save(p);
   }
 
