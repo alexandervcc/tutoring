@@ -11,6 +11,8 @@ import org.springframework.web.bind.annotation.RestController;
 import acc.tutoring.store.store.dto.ProductoReqDto;
 import acc.tutoring.store.store.model.Producto;
 import acc.tutoring.store.store.services.ProductoServicio;
+import jakarta.websocket.server.PathParam;
+
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.PutMapping;
@@ -18,6 +20,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 @RestController
 @RequestMapping(path = "/api/v1/producto")
+
 public class ProductoController {
   @Autowired
   private ProductoServicio productoServicio;
@@ -25,6 +28,11 @@ public class ProductoController {
   @GetMapping("/")
   public List<Producto> obtenerProductos() {
     return this.productoServicio.obtenerProductos();
+  }
+
+  @GetMapping("/{id}")
+  public Producto obtenerUnProduct(@PathVariable("id") Long id) {
+    return this.productoServicio.verProducto(id);
   }
 
   @PostMapping("/")
@@ -42,4 +50,5 @@ public class ProductoController {
   public void eliminarProducto(@PathVariable(name = "id", required = true) Long id) {
     this.productoServicio.eliminarProducto(id);
   }
+
 }
