@@ -1,4 +1,7 @@
 import React from "react";
+// Import con salida de directorio multiple
+import { RazasPerros } from "../../../../http/razas-perros" 
+
 
 type PaginaRazaNombrePerroProps = {
   params: {

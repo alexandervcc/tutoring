@@ -3,7 +3,12 @@ import Contador from "./Contador";
 import Efectos from "./Efectos";
 import Estados from "./Estados";
 import Perro from "./Perro";
+// Importar algo de un archivo en el mismo nivel
 import Secciones from "./Secciones";
+// Importar algo desde una carpeta anidada en el mismo nivel
+import ContadorConUseHook from "./contador/ContadorConUseHook";
+// Importar algo desde una carpeta externa
+import { HechoGato } from "../http/hechos-gatos";
 
 const Home = () => {
   return (

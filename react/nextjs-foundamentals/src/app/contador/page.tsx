@@ -1,6 +1,6 @@
 import React from "react";
 import ContadorSinUseHook from "./ContadorSinUseHook";
-import ContadorConUseHook from "./ContadorConUseHook copy";
+import ContadorConUseHook from "./ContadorConUseHook";
 
 const ContadorPagina = () => {
   return (
