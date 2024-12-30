@@ -2,7 +2,6 @@
 import React from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
-import RazasPerrosEffect from "../RazasPerrosEffect";
 
 const PaginaPerros = () => {
   const router = useRouter();
@@ -38,9 +37,18 @@ const PaginaPerros = () => {
         </button>
         <button onClick={paginaProductos}>Pagina Productos</button>
       </div>
-      <h1>Lista de razas de perros</h1>
 
-      <RazasPerrosEffect />
+      <div>
+        <p>Listas de perros: </p>
+        <ul>
+          <li>
+            <Link href="/perros/effect">Descargar perros usando useEffect</Link>
+          </li>
+          <li>
+            <Link href="/perros/hook">Descargar perros usando custom hook</Link>
+          </li>
+        </ul>
+      </div>
     </div>
   );
 };
