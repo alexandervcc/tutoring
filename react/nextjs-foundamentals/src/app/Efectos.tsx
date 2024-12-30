@@ -46,7 +46,7 @@ const Efectos = () => {
 
   return (
     <div style={{ border: "2px solid red" }}>
-      <h2>Efectos</h2>
+      <h2>Contador usando useEffect (Efectos)</h2>
       <p>
         <b>Contador1 :</b>
         {contador}

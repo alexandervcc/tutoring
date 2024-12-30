@@ -2,7 +2,6 @@ import Link from "next/link";
 import Contador from "./Contador";
 import Efectos from "./Efectos";
 import Estados from "./Estados";
-import HechosGatos from "./HechosGatos";
 import Perro from "./Perro";
 import Secciones from "./Secciones";
 
@@ -26,7 +25,6 @@ const Home = () => {
       </div>
 
       <Efectos />
-      <HechosGatos />
       <Perro />
       <Estados />
       <Secciones />
