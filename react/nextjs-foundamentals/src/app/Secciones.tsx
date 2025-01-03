@@ -1,4 +1,5 @@
 import React from "react";
+import PruebaContexto from "./PruebaContexto";
 
 const Secciones = () => {
   const listaSecciones: React.JSX.Element = (
@@ -14,6 +15,7 @@ const Secciones = () => {
 
   return (
     <div>
+      <PruebaContexto />
       <hr />
       {titulo}
       {listaSecciones}

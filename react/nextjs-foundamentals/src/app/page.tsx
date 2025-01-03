@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import Contador from "./Contador";
 import Efectos from "./Efectos";
@@ -9,10 +11,18 @@ import Secciones from "./Secciones";
 import ContadorConUseHook from "./contador/ContadorConUseHook";
 // Importar algo desde una carpeta externa
 import { HechoGato } from "../http/hechos-gatos";
+import PruebaContexto from "./PruebaContexto";
+import { useContext } from "react";
+import TemaContexto from "@/context/TemaContexto";
 
 const Home = () => {
+  const contexto = useContext(TemaContexto);
   return (
-    <div>
+    <div
+      style={{
+        backgroundColor: contexto?.color === "claro" ? "#ffffff" : "#000000",
+      }}
+    >
       <h1>Compustore</h1>
       <h6>Tu tienda amiga de componentes de PC</h6>
       <div style={{ border: "5px solid violet", padding: "25px" }}>
@@ -28,7 +38,7 @@ const Home = () => {
           </li>
         </ul>
       </div>
-
+      <PruebaContexto />
       <Efectos />
       <Perro />
       <Estados />

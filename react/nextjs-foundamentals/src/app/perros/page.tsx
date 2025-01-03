@@ -2,6 +2,7 @@
 import React from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
+import PruebaContexto from "../PruebaContexto";
 
 const PaginaPerros = () => {
   const router = useRouter();
@@ -13,6 +14,7 @@ const PaginaPerros = () => {
 
   return (
     <div>
+      <PruebaContexto />
       <h4>Links</h4>
       <ol>
         <li>

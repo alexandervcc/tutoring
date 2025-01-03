@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import TemaContextoProovedor from "@/context/TemaContextoProovedor";
 
 export const metadata: Metadata = {
-  title: 'Pagina de Inicio',
+  title: "Pagina de Inicio",
 };
-
 
 const RootLayout = ({
   children,
@@ -13,7 +13,9 @@ const RootLayout = ({
 }>) => {
   return (
     <html lang="en">
-      <body >{children}</body>
+      <TemaContextoProovedor>
+        <body>{children}</body>
+      </TemaContextoProovedor>
     </html>
   );
 };
