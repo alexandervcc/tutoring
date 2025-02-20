@@ -1,4 +1,4 @@
-import React, { createContext } from "react";
+import { createContext } from "react";
 
 // tipo de dato para el contexto
 export type TemaContextoTipo = {
