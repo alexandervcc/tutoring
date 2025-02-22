@@ -74,21 +74,18 @@ public class Main {
             System.out.println("n1 es menor o igaul que n2");
         }
 
-        /*
-         * System.out.println("Ingrese numero 1: ");
-         * int in1 = xd.nextInt();
-         * System.out.println("Ingrese numero 2: ");
-         * int in2 = xd.nextInt();
-         * 
-         * 
-         * if (in1 < in2) {
-         * System.out.println(">> "+in1 + " es menor que " + in2);
-         * }else if(in1 == in2) {
-         * System.out.println(">> "+in1 + " es igual a " + in2);
-         * }else {
-         * System.out.println(">> "+in1 + " es mayor que "+in2);
-         * }
-         */
+        System.out.println("Ingrese numero 1: ");
+        int in1 = xd.nextInt();
+        System.out.println("Ingrese numero 2: ");
+        int in2 = xd.nextInt();
+
+        if (in1 < in2) {
+            System.out.println(">> " + in1 + " es menor que " + in2);
+        } else if (in1 == in2) {
+            System.out.println(">> " + in1 + " es igual a " + in2);
+        } else {
+            System.out.println(">> " + in1 + " es mayor que " + in2);
+        }
 
         int num1 = 10;
         float float1 = 200;
@@ -127,10 +124,10 @@ public class Main {
         System.out.println("!(10 < 20 && 10 > 5): " + comp4);
 
         int edad = xd.nextInt();
-        if(edad < 18 || edad > 65){
+        if (edad < 18 || edad > 65) {
             System.out.println("No tiene que votar");
-        }else {
-            System.out.println("Obligada a votar");    
+        } else {
+            System.out.println("Obligada a votar");
         }
     }
 }
