@@ -3,7 +3,8 @@ package acc.coding;
 public class Main {
     public static void main(String[] args) {
         // For.forEjecucion();
-        While.whileEjecucion();
+        // While.whileEjecucion();
+        Switch.ejecutarSwitch();
     }
 
     static void teoria() {
