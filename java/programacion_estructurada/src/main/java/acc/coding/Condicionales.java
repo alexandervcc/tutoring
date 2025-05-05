@@ -24,8 +24,8 @@ public class Condicionales {
     System.out.println("70 == 65: " + b2);
     boolean b3 = 70 < 65;
     System.out.println("70 < 65: " + b3);
-    boolean b4 = 70 == 65;
-    System.out.println("70 == 65: " + b4);
+    boolean b4 = 70 != 65;
+    System.out.println("70 != 65: " + b4);
 
     int n1 = 10;
     int n2 = 20;
@@ -33,18 +33,38 @@ public class Condicionales {
     System.out.println(n1 + " <= " + n2 + ": " + b5);
 
     // IF
+    // Sentencia de condicion: evaluara una comparacion y en base al resultado
+    // ejecutara una pieza de codigo
+    // Si no se cumple lo que esta dentro del IF, podemos anadir una clausula else a ejecutar
+    // SINTAXIS:
     // if ( <condicion> ) {
     // .... cuerpo del if
     // }
 
+    System.out.println("\n\n\n\nIF:");
     if (10 > 5) {
-      System.out.println("10 es mayor a 5");
+      System.out.println("if: 10 es mayor a 5");
+    }
+    int int1 = 10;
+    int int2 = 5;
+    boolean bint1_int2 = int1 > int2;
+
+    if(bint1_int2){
+      System.out.println("if(variable): 10 es mayor a 5");
+    }
+
+    if (10 > 5) {
+      System.out.println("if: 10 es mayor a 5");
+    }else{
+      System.out.println("else: 10 NO es mayor a 5");
     }
 
     if (b5) {
       System.out.println("n1 es menor o igaul que n2");
     }
 
+    // Ejercio de aplicacion de IF:
+    
     System.out.println("Ingrese numero 1: ");
     int in1 = xd.nextInt();
     System.out.println("Ingrese numero 2: ");
