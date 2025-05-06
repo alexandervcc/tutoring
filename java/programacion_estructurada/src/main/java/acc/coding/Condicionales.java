@@ -35,7 +35,8 @@ public class Condicionales {
     // IF
     // Sentencia de condicion: evaluara una comparacion y en base al resultado
     // ejecutara una pieza de codigo
-    // Si no se cumple lo que esta dentro del IF, podemos anadir una clausula else a ejecutar
+    // Si no se cumple lo que esta dentro del IF, podemos anadir una clausula else a
+    // ejecutar
     // SINTAXIS:
     // if ( <condicion> ) {
     // .... cuerpo del if
@@ -49,13 +50,13 @@ public class Condicionales {
     int int2 = 5;
     boolean bint1_int2 = int1 > int2;
 
-    if(bint1_int2){
+    if (bint1_int2) {
       System.out.println("if(variable): 10 es mayor a 5");
     }
 
     if (10 > 5) {
       System.out.println("if: 10 es mayor a 5");
-    }else{
+    } else {
       System.out.println("else: 10 NO es mayor a 5");
     }
 
@@ -64,7 +65,7 @@ public class Condicionales {
     }
 
     // Ejercio de aplicacion de IF:
-    
+
     System.out.println("Ingrese numero 1: ");
     int in1 = scanner.nextInt();
     System.out.println("Ingrese numero 2: ");
@@ -91,10 +92,10 @@ public class Condicionales {
     char c1 = 'a';
     // boolean charVsString = str1 == c1; incompatible
 
-
     // Se puede comparar mediante los 4 operadores a los valores numeros
     // En el caso de Strings, no se puede utilizar una comparacion de igualdad ==
-    // boolean strVsstr1 = str1 == str2; Esta linea no hace comparacion correctamente, comparacion de direcciones de memoria
+    // boolean strVsstr1 = str1 == str2; Esta linea no hace comparacion
+    // correctamente, comparacion de direcciones de memoria
     // System.out.println("str1 == str2: " + strVsstr1);
 
     // La comparacion de strigns se hace mediante el metodo .equals
@@ -104,13 +105,13 @@ public class Condicionales {
     if (stringsSonIguales) {
       System.out.println("Igual a str1");
     } else {
-      System.out.println("NO Igual a str1");     
+      System.out.println("NO Igual a str1");
     }
 
     // OPERADORES LOGICOS
     // && AND
     // || OR
-    // !  NEGACION
+    // ! NEGACION
     // Si hay parentesis, dar prioridad a los parentesis
 
     System.out.println("\n\n\n\n\nOPERADORES LOGICOS:");
@@ -135,11 +136,23 @@ public class Condicionales {
 
     scanner.close();
     // 10 > 55 && (5 == 5)
-    //   false && (5 == 5)
-    //   false && true
-    //       false
+    // false && (5 == 5)
+    // false && true
+    // false
 
     // Ejercicio 1 = 20 > 10 && !(5 < 5 || 3 > -99)
     // Ejercicio 2 = !( 10 > 7 || !( false ||( 55 != 54 ) ))
+    boolean e1 = 20 > 10 && !(5 < 5 || 3 > -99);
+    boolean e2 = !(10 > 7 || !(false || (55 != 54)));
+    System.out.println("e1 = " + e1);
+    System.out.println("e2 = " + e2);
+
+    /*
+     * Ingresar mediante el escaner un valor de edad
+     * Si el valor es menor a 4, imprimir reprobo la materia
+     * Si el valro esta entre 4 y 7, aprobado
+     * si es mayor a 7, exonerado
+     * si es menor a 0 o mayor a 10, nota invalida
+     */
   }
 }
