@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Condicionales {
   static void ejecutarCondicionales() {
-    Scanner xd = new Scanner(System.in);
+    Scanner scanner = new Scanner(System.in);
 
     // --------------------------------------------------------------------------------
     // Condicionales
@@ -66,42 +66,54 @@ public class Condicionales {
     // Ejercio de aplicacion de IF:
     
     System.out.println("Ingrese numero 1: ");
-    int in1 = xd.nextInt();
+    int in1 = scanner.nextInt();
     System.out.println("Ingrese numero 2: ");
-    int in2 = xd.nextInt();
+    int in2 = scanner.nextInt();
 
     if (in1 < in2) {
-      System.out.println(">> " + in1 + " es menor que " + in2);
+      System.out.println("74: >> " + in1 + " es menor que " + in2);
+      // else if: patron para concatenar condicionales
     } else if (in1 == in2) {
-      System.out.println(">> " + in1 + " es igual a " + in2);
+      System.out.println("77: >> " + in1 + " es igual a " + in2);
     } else {
-      System.out.println(">> " + in1 + " es mayor que " + in2);
+      System.out.println("79: >> " + in1 + " es mayor que " + in2);
     }
+
+    System.out.println("\n\n\n\n");
 
     int num1 = 10;
     float float1 = 200;
     boolean bb1 = num1 == float1;
 
     String str1 = "str1";
-    String str2 = "str1";
+    String str2 = "str12222";
     // boolean bb2 = num1 == str1; incompatible
     char c1 = 'a';
     // boolean charVsString = str1 == c1; incompatible
 
-    boolean strVsstr1 = str1 == str2;
-    System.out.println("str1 == str2: " + strVsstr1);
 
-    if (str1 == "str1") {
+    // Se puede comparar mediante los 4 operadores a los valores numeros
+    // En el caso de Strings, no se puede utilizar una comparacion de igualdad ==
+    // boolean strVsstr1 = str1 == str2; Esta linea no hace comparacion correctamente, comparacion de direcciones de memoria
+    // System.out.println("str1 == str2: " + strVsstr1);
+
+    // La comparacion de strigns se hace mediante el metodo .equals
+
+    System.out.println("\n\n\n\n\nCOMPARACION DE STRINGS:");
+    boolean stringsSonIguales = str1.equals(str2);
+    if (stringsSonIguales) {
       System.out.println("Igual a str1");
     } else {
-      System.out.println("NO Igual a str1");
+      System.out.println("NO Igual a str1");     
     }
 
     // OPERADORES LOGICOS
     // && AND
     // || OR
-    // ! NEGACION
+    // !  NEGACION
+    // Si hay parentesis, dar prioridad a los parentesis
 
+    System.out.println("\n\n\n\n\nOPERADORES LOGICOS:");
     boolean comp1 = 10 > 20 && 10 > 5;
     System.out.println("10 > 20 && 10 > 5: " + comp1);
 
@@ -114,13 +126,20 @@ public class Condicionales {
     boolean comp4 = !(10 < 20 && 10 > 5);
     System.out.println("!(10 < 20 && 10 > 5): " + comp4);
 
-    int edad = xd.nextInt();
+    int edad = scanner.nextInt();
     if (edad < 18 || edad > 65) {
       System.out.println("No tiene que votar");
     } else {
       System.out.println("Obligada a votar");
     }
 
-    xd.close();
+    scanner.close();
+    // 10 > 55 && (5 == 5)
+    //   false && (5 == 5)
+    //   false && true
+    //       false
+
+    // Ejercicio 1 = 20 > 10 && !(5 < 5 || 3 > -99)
+    // Ejercicio 2 = !( 10 > 7 || !( false ||( 55 != 54 ) ))
   }
 }
