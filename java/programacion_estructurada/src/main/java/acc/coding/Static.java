@@ -20,7 +20,7 @@ public class Static {
 
     System.out.println("2. Static.n1 = " + Static.n1);
 
-    Main.cambiarStaticN1();
+    // Main.cambiarStaticN1();
 
     System.out.println("3. Static.n1 = " + Static.n1);
     

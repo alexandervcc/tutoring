@@ -46,9 +46,41 @@ public class Funciones {
     System.out.println("\n\nEjecucion de una funcion que recibe dos variables (double, String):");
     Funciones.imprimirDosVariables(-55.123456, "Mijotron");
 
+    System.out.println("\n\nEjecucion de una funcion que devuelve un valor:");
+    int v1 = Funciones.devolverUnInt();
+    System.out.println("devolverUnInt:v1: " + v1);
+    double v2 = Funciones.devolverUnDouble();
+    System.out.println("v2=" + v2);
+    String v3 = Funciones.devolverUnString();
+    System.out.println("v3=" + v3);
+    double[] v4 = Funciones.devolverUnArregloDouble();
+    for (int i = 0; i < v4.length; i++) {
+      System.out.println("i[" + i + "] => " + v4[i]);
+    }
+
+    System.out.println("\n\n\n\nEjemplos");
+    double v11 = Funciones.multiplicacion(11, 4);
+    System.out.println("multiplicacion:v11=" + v11);
+
+    System.out.println("\n\nSumatorias");
+    int[] arr1 = { 1, 2, 3, 4 };
+    int[] arr2 = { 9, 8, 7, 6, 5, 4 };
+
+    int sum1 = Funciones.sumatoria(arr1);
+    int sum2 = Funciones.sumatoria(arr2);
+
+    System.out.println("sum1 = " + sum1);
+    System.out.println("sum2 = " + sum2);
+
+    String txt = Funciones.palabraUsuario();
+    System.out.println("palabra 1 = "+txt);
+    String txt2 = Funciones.palabraUsuario();
+    System.out.println("palabra 2 = "+txt2);
   }
 
-  // modificador de acceso, tipo de dato de retorno, nombre de funcion, parametros
+  /**
+   * modificador de acceso, tipo de dato de retorno, nombre de funcion, parametros
+   */
   public static void imprimirTexto() {
     // Esta funcion no tiene parametros
     // Esta funcion tiene tipo de dato de retorno `void`
@@ -71,7 +103,56 @@ public class Funciones {
 
   public static void imprimirDosVariables(double i, String texto) {
     System.out.println("Numero = " + i);
-    System.out.println("Texto = " + texto);
+    System.out.println("Texto  = " + texto);
+  }
+
+  /**
+   * Funcion que devuelve un valor
+   */
+  public static int devolverUnInt() {
+    // Para hacer retornos de valores hay que usar la palabra `return`
+    System.out.println("la funcion `devolverUnInt` fue ejecutada.");
+
+    // Como la funcion devuelve un valor, podemos capturar ese valor en una variable
+    return 100;
+  }
+
+  public static double devolverUnDouble() {
+    System.out.println("la funcion `devolverUnDouble` fue ejecutada.");
+    return 99.999999;
+  }
+
+  public static String devolverUnString() {
+    System.out.println("la funcion `devolverUnString` fue ejecutada.");
+    return "mijoron";
+  }
+
+  public static double[] devolverUnArregloDouble() {
+    System.out.println("la funcion `devolverUnArregloDouble` fue ejecutada.");
+
+    double[] arr = { 5.5, 6.9, 7.7 };
+
+    return arr;
+  }
+
+  public static double multiplicacion(double x, double y) {
+    return x * y;
+  }
+
+  public static int sumatoria(int[] arr) {
+    int sumatoria = 0;
+
+    for (int i = 0; i < arr.length; i++) {
+      sumatoria += arr[i];
+    }
+
+    return sumatoria;
+  }
+
+  public static String palabraUsuario() {
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Ingrese una palabra: ");
+    return sc.next();
   }
 
 }
