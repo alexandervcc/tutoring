@@ -54,5 +54,43 @@ public class For {
     for (int i = 0; i < numeros.length; i++) {
       System.out.println(" [" + i + "] => " + numeros[i]);
     }
+
+    for (int i = 0; i < 10; i++) {
+      if (i % 2 == 0) {
+        for (int j = 0; j < numeros.length; j++) {
+
+        }
+      }
+    }
+
+    // Alcance de variables
+    int num2 = 10;
+    // Desde que lugar se puede acceder a una variable declarada
+    if (10 % 2 == 0) {
+      // Esta variable, tiene el alcance limitado al bloque donde fue declarada
+      int numeroIf = 100;
+      numeroIf += 10;
+      System.out.println("numeroIf=" + numeroIf);
+
+      numeroIf += num2;
+    }
+
+    for (int i = 0; i < numeros.length; i++) {
+      int j = i * 10;
+      j *= num2;
+      System.out.println("j = " + j);
+
+      if (j % 2 == 0) {
+        int num3 = j - 99;
+        num3 += 1;
+      }
+
+      // Variable no es alcanzable desde el bloque externo
+      // num3+=1;
+    }
+
+    // Variable no es alcanzable desde el bloque externo  
+    // j = 10;
+    // System.out.println(numeroIf);
   }
 }
