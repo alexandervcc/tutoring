@@ -1,16 +1,12 @@
 package acc.coding;
 
-import java.util.Random;
-
 public class Main {
     public static void main(String[] args) {
         System.out.println(">>> Ejecutando Main main");
         // Condicionales.ejecutarCondicionales();
         // ScannerEjercicio.ejecutarScanner();
-        // Funciones.ejecutarFunciones();
-        For.arreglosMultidimencionales();
+        // For.arreglosMultidimencionales();
+        Funciones.ejecutarFunciones2();
     }
-
-
 
 }

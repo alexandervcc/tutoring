@@ -73,9 +73,9 @@ public class Funciones {
     System.out.println("sum2 = " + sum2);
 
     String txt = Funciones.palabraUsuario();
-    System.out.println("palabra 1 = "+txt);
+    System.out.println("palabra 1 = " + txt);
     String txt2 = Funciones.palabraUsuario();
-    System.out.println("palabra 2 = "+txt2);
+    System.out.println("palabra 2 = " + txt2);
   }
 
   /**
@@ -152,7 +152,88 @@ public class Funciones {
   public static String palabraUsuario() {
     Scanner sc = new Scanner(System.in);
     System.out.println("Ingrese una palabra: ");
-    return sc.next();
+    String xd = sc.next();
+    sc.close();
+    return xd;
+  }
+
+  public static void f1ConParametros(int num) {
+    System.out.println("f1ConParametros::num = " + num);
+  }
+
+  public static void f2ConParametros(int num, String str1, double[] arr1) {
+    System.out.println("\n\nf2ConParametros::num    = " + num);
+    System.out.println("f2ConParametros::str1   = " + str1);
+    System.out.print("f2ConParametros::arr1   = ");
+    for (int i = 0; i < arr1.length; i++) {
+      System.out.print(arr1[i] + ", ");
+    }
+  }
+
+  public static void imprimirArreglo(int[] arr) {
+    System.out.println("Imprimiendo arreglo: ");
+    for (int i = 0; i < arr.length; i++) {
+      System.out.println("arr[" + i + "] => " + arr[i]);
+    }
+  }
+
+  public static String str1() {
+    return "1 xd flashito";
+  }
+
+  public static String bienvenido(String nombre, int edad) {
+    String msg = "Saludos " + nombre + " con edad = " + edad + ". Bienvenido al sistema!!";
+    return msg;
+  }
+
+  public static double operacion(double d1, double d2) {
+    double d = (d1 + d2) * 10;
+    return d;
+  }
+
+  public static void ejecutarFunciones2() {
+    Funciones.f1ConParametros(10);
+    Funciones.f1ConParametros(99);
+    int num = -25;
+    Funciones.f1ConParametros(num);
+    Funciones.f1ConParametros(num);
+    int num2 = 15;
+    Funciones.f1ConParametros(num2);
+    num = 7777;
+    Funciones.f1ConParametros(num);
+
+    double[] arr = { 1.2, 5.9, 7.8 };
+    Funciones.f2ConParametros(num, "cheems", arr);
+    double[] arr2 = { 101.9, -55.7, 45.2, 9.9 };
+    Funciones.f2ConParametros(-1, "manaseses", arr2);
+
+    System.out.println("\n\n\n");
+    String res1 = Funciones.str1();
+    String res2 = Funciones.str1();
+
+    System.out.println("res1 = " + res1);
+    System.out.println("res2 = " + res2);
+
+    System.out.println("\n\n\n");
+    double d1 = Funciones.operacion(10.2, 3.7);
+    System.out.println("d1 = " + d1);
+    double d2 = Funciones.operacion(-5.2, 31.22);
+    System.out.println("d2 = " + d2);
+
+    Funciones.operacion(-5.2, 31.22);
+
+    System.out.println("\n\n");
+    String str1 = Funciones.bienvenido("Alex", 26);
+    System.out.println("str1 = " + str1);
+    String str2 = Funciones.bienvenido("Mana", 8);
+    System.out.println("str2 = " + str2);
+
+
+    System.out.println("\n\n\n");
+    int[] arr11 = { 5 ,5,9,7};
+    int[] arr12 = { -5 ,0};
+    Funciones.imprimirArreglo(arr11);
+    Funciones.imprimirArreglo(arr12);
   }
 
 }
