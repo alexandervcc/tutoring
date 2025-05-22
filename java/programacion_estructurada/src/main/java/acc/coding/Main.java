@@ -6,7 +6,8 @@ public class Main {
         // Condicionales.ejecutarCondicionales();
         // ScannerEjercicio.ejecutarScanner();
         // For.arreglosMultidimencionales();
-        Funciones.ejecutarFunciones2();
+        // Funciones.ejecutarFunciones2();
+        While.whileEjecucion();
     }
 
 }
