@@ -7,7 +7,8 @@ public class Main {
         // ScannerEjercicio.ejecutarScanner();
         // For.arreglosMultidimencionales();
         // Funciones.ejecutarFunciones2();
-        While.whileEjecucion();
+        // While.whileEjecucion();
+        DoWhile.ejecutarDoWhile();
     }
 
 }
