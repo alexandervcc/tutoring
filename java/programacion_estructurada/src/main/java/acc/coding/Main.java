@@ -9,7 +9,8 @@ public class Main {
         // Funciones.ejecutarFunciones2();
         // While.whileEjecucion();
         // DoWhile.ejecutarDoWhile();
-        Switch.ejecutarSwitch();
+        // Switch.ejecutarSwitch();
+        Strings.ejecutarStrings();
     }
 
 }
