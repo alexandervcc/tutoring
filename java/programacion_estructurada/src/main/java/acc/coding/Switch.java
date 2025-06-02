@@ -8,6 +8,8 @@ public class Switch {
      * Se define una lista de casos y codigo a ejecutar para cada caso.
      * Por cada caso se debe de anadir un break para evitar que se ejecute el
      * siguiente caso.
+     * Tipos de datos que soporta el switch: byte, short, int, char, strings, enum
+     * Puede soportar lambdas (tipo de funciones) desde Java 14.
      */
     int numero = 1;
     // enteros
@@ -29,6 +31,7 @@ public class Switch {
         break;
     }
 
+    System.out.println("\n\n\n");
     // strings
     switch ("xd") {
       case "xd":

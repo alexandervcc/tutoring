@@ -8,7 +8,8 @@ public class Main {
         // For.arreglosMultidimencionales();
         // Funciones.ejecutarFunciones2();
         // While.whileEjecucion();
-        DoWhile.ejecutarDoWhile();
+        // DoWhile.ejecutarDoWhile();
+        Switch.ejecutarSwitch();
     }
 
 }
