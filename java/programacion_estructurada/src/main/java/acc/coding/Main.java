@@ -6,11 +6,26 @@ public class Main {
         // Condicionales.ejecutarCondicionales();
         // ScannerEjercicio.ejecutarScanner();
         // For.arreglosMultidimencionales();
-        // Funciones.ejecutarFunciones2();
         // While.whileEjecucion();
         // DoWhile.ejecutarDoWhile();
         // Switch.ejecutarSwitch();
-        Strings.ejecutarStrings();
+        // Strings.ejecutarStrings();
+        // Funciones.ejecutarFunciones();
+
+        EjemploFunciones.funcion1();
+        EjemploFunciones.funcion1();
+        EjemploFunciones.funcion1();
+        EjemploFunciones.funcion1();
+
+        EjemploFunciones.funcion2();
+        int n1 = EjemploFunciones.funcion2();
+        System.out.println("Main::n1 = " + n1);
+
+        EjemploFunciones.funcionRetornarString();
+        EjemploFunciones.funcionRetornarString();
+        EjemploFunciones.funcionRetornarString();
+        String str1 = EjemploFunciones.funcionRetornarString();
+        System.out.println("Main::str1 = " + str1);
     }
 
 }

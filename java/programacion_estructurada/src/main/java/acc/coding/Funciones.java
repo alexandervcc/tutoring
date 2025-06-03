@@ -23,6 +23,11 @@ public class Funciones {
    * nombre.
    */
 
+  // <modificador de acceso> <tipo de retorno> <nombre de la funcion> ( < parametros>  ) {
+  //     ...
+  // }
+
+
   public static void ejecutarFunciones() {
     System.out.println(">>>>>>> Ejecutando la funcion `ejecutarFunciones`");
     Funciones.imprimirTexto();
