@@ -1,17 +1,7 @@
 package acc.coding;
 
 public class Main {
-    public static void main(String[] args) {
-        System.out.println(">>> Ejecutando Main main");
-        // Condicionales.ejecutarCondicionales();
-        // ScannerEjercicio.ejecutarScanner();
-        // For.arreglosMultidimencionales();
-        // While.whileEjecucion();
-        // DoWhile.ejecutarDoWhile();
-        // Switch.ejecutarSwitch();
-        // Strings.ejecutarStrings();
-        // Funciones.ejecutarFunciones();
-
+    public static void llamarFuciones() {
         EjemploFunciones.funcion1();
         EjemploFunciones.funcion1();
         EjemploFunciones.funcion1();
@@ -41,6 +31,20 @@ public class Main {
         System.out.println("\n\nFuncion con 2 parametros:");
         EjemploFunciones.funcion4("Ejemplo string", 5);
 
+    }
+
+    public static void main(String[] args) {
+        System.out.println(">>> Ejecutando Main main");
+        // Condicionales.ejecutarCondicionales();
+        // ScannerEjercicio.ejecutarScanner();
+        // For.arreglosMultidimencionales();
+        // While.whileEjecucion();
+        // DoWhile.ejecutarDoWhile();
+        // Switch.ejecutarSwitch();
+        // Strings.ejecutarStrings();
+        // Funciones.ejecutarFunciones();
+
+        Recursividad.ejecutar();
     }
 
 }
