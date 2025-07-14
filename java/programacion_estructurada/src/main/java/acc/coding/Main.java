@@ -43,8 +43,9 @@ public class Main {
         // Switch.ejecutarSwitch();
         // Strings.ejecutarStrings();
         // Funciones.ejecutarFunciones();
-
-        Recursividad.ejecutar();
+        // Recursividad.ejecutar();
+        // Excepciones.ejecutar();
+        Excepciones.ejecutar();
     }
 
 }
