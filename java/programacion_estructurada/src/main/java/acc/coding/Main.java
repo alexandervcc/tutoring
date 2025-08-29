@@ -1,5 +1,7 @@
 package acc.coding;
 
+import acc.coding.poo.Poo;
+
 public class Main {
     public static void llamarFuciones() {
         EjemploFunciones.funcion1();
@@ -46,8 +48,11 @@ public class Main {
         // Recursividad.ejecutar();
         // BoxingUnboxing.ejecutar();
         // CopiasYReferencias.ejecutar();
-        Excepciones.ejecutar();
+        // Excepciones.ejecutar();
+        // Ahorcado.ejecutar();
 
+
+        Poo.ejecutar();
     }
 
 }
