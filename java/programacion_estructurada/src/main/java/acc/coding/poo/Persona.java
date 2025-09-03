@@ -47,11 +47,43 @@ public class Persona {
         System.out.println(this.nombre + " esta durmiendo.");
     }
 
-    // @ -> Anotacion: una caracteristica extra que se le anade una function o atributo
+    // @ -> Anotacion: una caracteristica extra que se le anade una function o
+    // atributo
     // Override: sobrecargando un metodo (sobrecargar = sobreescribiendo)
     @Override
     public String toString() {
-        return "Persona [nombre=" + nombre + ", edad=" + edad + ", apellido=" + apellido + "]";
+        return "Persona [nombre=" + nombre + ", edad=" + edad + ", apellido=" + apellido + ", peso=" + peso
+                + ", masaCorporal=" + masaCorporal + "]";
     }
+
+    // equals(): metodo para comparar si el contenido de dos objetos son iguales.
+    // Este metodo se sobrecarga y puede ser generado por el IDE.
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+        Persona other = (Persona) obj;
+        if (nombre == null) {
+            if (other.nombre != null)
+                return false;
+        } else if (!nombre.equals(other.nombre))
+            return false;
+        if (edad != other.edad)
+            return false;
+        if (apellido == null) {
+            if (other.apellido != null)
+                return false;
+        } else if (!apellido.equals(other.apellido))
+            return false;
+        if (Double.doubleToLongBits(peso) != Double.doubleToLongBits(other.peso))
+            return false;
+        if (Double.doubleToLongBits(masaCorporal) != Double.doubleToLongBits(other.masaCorporal))
+            return false;
+        return true;
+    } 
 
 }

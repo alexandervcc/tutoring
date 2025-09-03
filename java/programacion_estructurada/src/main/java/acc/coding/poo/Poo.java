@@ -23,6 +23,38 @@ public class Poo {
     */
 
    public static void ejecutar() {
+      Poo.ejecutarEjemploMascota();
+   }
+
+   public static void ejecutarEjemploMascota() {
+      Mascota m1 = new Mascota("Mana", "Perro", 18);
+      Mascota m3 = new Mascota("Babas","Perro",12);
+      /*       
+      Si atributos son publicos se puede leer/escribir
+      System.out.println("m1 = " + m1.nombre);
+      m1.nombre = "Lucky";
+      System.out.println("m1 = " + m1.nombre);
+      */
+      System.out.println("m1 = "+m1);
+
+
+      /* 
+      Esta operacion es imposible porque el atributo es privado
+      System.out.println("m1 = " + m1.edad);
+      m1.edad = 1; 
+      */
+      m1.comer();
+
+      // Getter & Setter
+      Mascota m2 = new Mascota();
+      System.out.println("m2 = "+m2.getNombre());
+      m2.setNombre("Cocochas");
+      System.out.println("m2 = "+m2.getNombre());
+      
+      
+   }
+
+   public static void ejecutarEjemploPerson() {
       String str1 = "";
       Scanner sc = new Scanner(System.in);
       sc.close();
@@ -62,9 +94,25 @@ public class Poo {
 
       Persona p4 = new Persona("Simpson");
       p4.trabajar();
-      
+
       System.out.println("\n\n\n\n\ntoString()");
-      System.out.println("p3.1 = "+p3.toString());
-      System.out.println("p3.2 = "+p3);
+      System.out.println("p3.1 = " + p3.toString());
+      System.out.println("p3.2 = " + p3);
+      System.out.println("p1 = " + p1);
+
+      Persona p5 = p1;
+      if (p1 == p5) {
+         System.out.println("p1 y p5 son iguales.");
+      }
+      Persona p4_2 = new Persona("Simpson");
+      System.out.println("  p4 = " + p4);
+      System.out.println("p4_2 = " + p4_2);
+      if (p4 == p4_2) {
+         System.out.println("p4 y p4_2 son iguales.");
+      }
+
+      if (p4.equals(p4_2)) {
+         System.out.println(">>> p4 y p4_2 son iguales, usando equals.");
+      }
    }
 }
